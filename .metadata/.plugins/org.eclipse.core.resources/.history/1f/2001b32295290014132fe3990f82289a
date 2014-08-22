@@ -1,0 +1,25 @@
+var mainWin = Ti.UI.createWindow({
+	backgroundColor: "gray",
+	title: "Pet Store"
+});
+
+var mainNav = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+var galButton = Ti.UI.createView ({
+	backgroundColor: "#23ba00",
+	align: "center",
+	width: "100%",
+});
+
+var galButtonText = Ti.UI.createLabel({
+	text: "Image Gallery",
+	textAlign: "center",
+	color: "#fff",
+});
+
+
+galButton.add(galButtonText);
+mainWin.add(galButton);
+mainNav.open();
