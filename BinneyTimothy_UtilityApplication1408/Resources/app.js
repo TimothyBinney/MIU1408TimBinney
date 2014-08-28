@@ -85,7 +85,8 @@ var registerButtonText = Ti.UI.createLabel({
 	color: "#fff",
 });
 
-//var loadJs = require ("gallery");
+var loadJs = require ("JSON");
+var loadJS = require ("register");
 
 breedaholicsView.add(breedaholicsText);
 emailInputView.add(emailInputHint);

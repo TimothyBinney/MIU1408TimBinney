@@ -1,0 +1,67 @@
+// Function start for Register Button Event Listener
+
+var registerFunction = function(){
+
+var registerWindow = Ti.UI.createWindow({
+	backgroundColor: "#1874cd",
+	title: "Register"
+});
+
+
+// Register Text Fields+ Hints
+var emailRegTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: 50,
+	height: 30,
+	width: "50%",
+});
+
+var passwordRegTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: emailRegTextField.top + 60,
+	width: "50%",
+	height: 30,
+});
+
+var firstNameTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: passwordRegTextField.top + 60,
+	width: "50%",
+	height: 30,
+});
+
+var lastNameTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: firstNameTextField.top + 60,
+	width: "50%",
+	height: 30,
+});
+
+
+
+var emailRegInputView = Ti.UI.createView({
+	top: 20,
+	height: 30,
+});
+
+var emailRegInputHint = Ti.UI.createLabel({
+	text: "Email",
+	textAlign: "Left",	
+});
+
+var passRegInputView = Ti.UI.createView({
+	top: emailRegTextField.top + emailRegTextField.height + 5,
+	height: 30,
+});
+
+var passRegInputHint = Ti.UI.createLabel({
+	text: "Password",
+	textAlign: "Left",	
+});
+
+emailRegInputView.add(emailRegInputHint);
+passRegInputView.add(passRegInputHint);
+registerWindow.add(emailRegTextField,passwordRegTextField,emailRegInputHint,passRegInputHint,emailRegInputView,passRegInputView);
+mainNav.openWindow(registerWindow);
+};
+registerButton.addEventListener("click", registerFunction);
