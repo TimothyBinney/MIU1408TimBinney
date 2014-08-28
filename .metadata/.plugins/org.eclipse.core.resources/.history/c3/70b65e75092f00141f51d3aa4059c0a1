@@ -1,0 +1,23 @@
+// Registration Confirm Function
+
+
+var returnHome = function(){
+	
+	var fakeWin = Ti.UI.createWindow({
+		backgroundColor: "white",
+	});
+	
+	confirm("Did you want that?");
+	
+};
+
+
+mainNav.openWindow(fakeWin);
+
+
+
+
+
+
+
+

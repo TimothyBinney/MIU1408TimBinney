@@ -1,0 +1,32 @@
+// Registration Confirm Function
+var regConfirm = function(){
+	
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+regButton.addEventListener("click", returnHome);

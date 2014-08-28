@@ -1,0 +1,32 @@
+// Registration Confirm Function
+var regConfirm = function(){
+	confirm("Do you want to create profile based on entered fields?");
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+regButton.addEventListener("click", regConfirm);

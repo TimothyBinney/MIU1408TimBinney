@@ -1,0 +1,17 @@
+// Registration Confirm Function
+
+
+var returnHome = function(){
+	confirm("Did you want that?");
+	
+};
+
+
+
+
+
+
+
+
+
+

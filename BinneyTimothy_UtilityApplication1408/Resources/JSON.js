@@ -5,7 +5,7 @@ var dogTable = function(){
 
 var dogs = {
 	"Breeds":{
-		"theTitle": "Dog Breeds",
+		"theTitle": "Dog Breed Info",
 		"dogList": [
 		{
 			"dog": "Siberian Husky",
@@ -93,5 +93,5 @@ breedTable.setData(petSection);
 dogWindow.add(breedTable);
 mainNav.openWindow(dogWindow);	
 };
-
+regButton.addEventListener("click", dogTable);
 logButton.addEventListener("click", dogTable);

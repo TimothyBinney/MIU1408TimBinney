@@ -88,6 +88,7 @@ var registerButtonText = Ti.UI.createLabel({
 var loadJs = require ("JSON");
 var loadJS = require ("register");
 
+
 breedaholicsView.add(breedaholicsText);
 emailInputView.add(emailInputHint);
 passInputView.add(passInputHint);

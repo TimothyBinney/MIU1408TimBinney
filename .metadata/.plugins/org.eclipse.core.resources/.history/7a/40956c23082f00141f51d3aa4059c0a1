@@ -1,0 +1,101 @@
+// Function start for Register Button Event Listener
+
+var registerFunction = function(){
+
+var registerWindow = Ti.UI.createWindow({
+	backgroundColor: "#1874cd",
+	title: "Register"
+});
+
+
+// Register Text Fields+ Hints
+var emailRegTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: 50,
+	height: 30,
+	width: "50%",
+});
+
+var passwordRegTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: emailRegTextField.top + 60,
+	width: "50%",
+	height: 30,
+});
+
+var firstNameTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: passwordRegTextField.top + 60,
+	width: "50%",
+	height: 30,
+});
+
+var lastNameTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	top: firstNameTextField.top + 60,
+	width: "50%",
+	height: 30,
+});
+
+var firstNameInputView = Ti.UI.createView({
+	top: passwordRegTextField.top + passwordRegTextField.height + 5,
+	height: 30,
+});
+
+var firstNameInputHint = Ti.UI.createLabel({
+	text: "First Name",
+	textAlign: "Left",	
+});
+
+var lastNameInputView = Ti.UI.createView({
+	top: firstNameTextField.top + firstNameTextField.height + 5,
+	height: 30,
+});
+
+var lastNameInputHint = Ti.UI.createLabel({
+	text: "Last Name",
+	textAlign: "Left",	
+});
+
+var emailRegInputView = Ti.UI.createView({
+	top: 25,
+	height: 30,
+});
+
+var emailRegInputHint = Ti.UI.createLabel({
+	text: "Email",
+	textAlign: "Left",	
+});
+
+var passRegInputView = Ti.UI.createView({
+	top: emailRegTextField.top + emailRegTextField.height + 5,
+	height: 30,
+});
+
+var passRegInputHint = Ti.UI.createLabel({
+	text: "Password",
+	textAlign: "Left",	
+});
+
+var regButton = Ti.UI.createView({
+	backgroundColor: "#ff7f00",
+	bottom: 0,
+	width: "100%",
+	height: 100,
+});
+
+var regButtonText = Ti.UI.createLabel({
+	text: "Register Now",
+	color: "white",
+});
+
+regButton.add(regButtonText);
+firstNameInputView.add(firstNameInputHint);
+lastNameInputView.add(lastNameInputHint);
+emailRegInputView.add(emailRegInputHint);
+passRegInputView.add(passRegInputHint);
+registerWindow.add(emailRegTextField,passwordRegTextField,emailRegInputHint,passRegInputHint,emailRegInputView,passRegInputView, firstNameTextField,lastNameTextField, lastNameInputView, firstNameInputView, regButton);
+mainNav.openWindow(registerWindow);
+};
+
+registerButton.addEventListener("click", registerFunction);
