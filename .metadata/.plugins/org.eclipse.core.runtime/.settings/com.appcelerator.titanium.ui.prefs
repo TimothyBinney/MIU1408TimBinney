@@ -1,7 +1,9 @@
 =run
 BinneyTimothy_CodingPrototype1408\:launchMode=run
 BinneyTimothy_CodingPrototype1408\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (3.5 inch)
-LAST_LAUNCH_TIMESTAMP=1408672909307
+BinneyTimothy_UtilityApplication1408\:launchMode=run
+BinneyTimothy_UtilityApplication1408\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch 64-bit)
+LAST_LAUNCH_TIMESTAMP=1409253179509
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
